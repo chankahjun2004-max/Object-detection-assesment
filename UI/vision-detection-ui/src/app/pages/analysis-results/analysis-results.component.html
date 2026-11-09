@@ -1,0 +1,285 @@
+<div class="page-content">
+  <!-- Back Button -->
+  <button class="back-btn" (click)="goBack()">
+    <span class="arrow">←</span> Back to Analyses
+  </button>
+
+  <!-- Loading State -->
+  <div class="loading-state" *ngIf="loading">
+    <div class="spinner"></div>
+    <span>Loading results...</span>
+  </div>
+
+  <ng-container *ngIf="!loading && analysis">
+    <!-- Summary Bar -->
+    <div class="summary-bar card">
+      <div class="summary-left">
+        <h1 class="summary-title">{{ analysis.clipName }}</h1>
+        <span class="badge" [ngClass]="{
+          'badge-queued': analysis.status === 'queued',
+          'badge-processing': analysis.status === 'processing',
+          'badge-complete': analysis.status === 'complete',
+          'badge-failed': analysis.status === 'failed'
+        }">
+          <span class="badge-dot"></span>
+          {{ analysis.status | titlecase }}
+        </span>
+      </div>
+      <div class="summary-stats">
+        <div class="stat">
+          <span class="stat-value">{{ analysis.framesAnalyzed | number }}</span>
+          <span class="stat-label">Frames Analyzed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">{{ matches.length }}</span>
+          <span class="stat-label">Candidate Matches</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">{{ confirmedCount }}</span>
+          <span class="stat-label">Confirmed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">{{ unreviewedCount }}</span>
+          <span class="stat-label">Unreviewed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value version">{{ analysis.modelVersion }}</span>
+          <span class="stat-label">Model Version</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three Column Layout -->
+    <div class="results-grid">
+
+      <!-- Left: Frame Viewer -->
+      <div class="card frame-viewer-panel">
+        <div class="card-header">
+          <span class="card-title">Frame Viewer</span>
+          <span class="frame-counter" *ngIf="selectedMatch">
+            {{ currentFrameIndex + 1 }} / {{ matches.length }}
+          </span>
+        </div>
+
+        <div class="canvas-wrapper">
+          <canvas #frameCanvas width="560" height="360" class="frame-canvas"></canvas>
+          <div class="canvas-empty" *ngIf="!selectedMatch">
+            <span>Select a match to view the frame</span>
+          </div>
+        </div>
+
+        <!-- Timestamp -->
+        <div class="timestamp-bar" *ngIf="selectedMatch">
+          <span class="ts-label">Timestamp</span>
+          <span class="ts-value">{{ formatTimestamp(selectedMatch.timestamp) }}</span>
+          <span class="ts-label">Frame</span>
+          <span class="ts-value">#{{ selectedMatch.frameNumber }}</span>
+        </div>
+
+        <!-- Navigation -->
+        <div class="frame-nav">
+          <button class="btn btn-ghost btn-sm nav-btn" (click)="prevFrame()" [disabled]="currentFrameIndex === 0">
+            ‹ Prev
+          </button>
+          <div class="nav-track">
+            <div class="nav-fill" [style.width.%]="matches.length > 1 ? (currentFrameIndex / (matches.length - 1)) * 100 : 0"></div>
+          </div>
+          <button class="btn btn-ghost btn-sm nav-btn" (click)="nextFrame()" [disabled]="currentFrameIndex === matches.length - 1">
+            Next ›
+          </button>
+        </div>
+      </div>
+
+      <!-- Middle: Match List -->
+      <div class="card match-list-panel">
+        <div class="card-header">
+          <span class="card-title">Match List</span>
+          <div class="match-legend">
+            <span class="legend-dot confirmed"></span>
+            <span>{{ confirmedCount }}</span>
+            <span class="legend-dot rejected"></span>
+            <span>{{ rejectedCount }}</span>
+            <span class="legend-dot unreviewed"></span>
+            <span>{{ unreviewedCount }}</span>
+          </div>
+        </div>
+
+        <div class="match-list">
+          <div class="match-item"
+               *ngFor="let match of matches"
+               [class.selected]="selectedMatch?.id === match.id"
+               [class.match-confirmed]="match.reviewState === 'confirmed'"
+               [class.match-rejected]="match.reviewState === 'rejected'"
+               (click)="selectMatch(match)">
+
+            <!-- Thumbnail -->
+            <div class="match-thumb" [class.thumb-confirmed]="match.reviewState === 'confirmed'"
+                 [class.thumb-rejected]="match.reviewState === 'rejected'">
+              <img [src]="match.tagCropUrl" alt="Tag Crop" class="thumb-crop-img" *ngIf="match.tagCropUrl">
+              <ng-container *ngIf="!match.tagCropUrl">
+                <span class="thumb-icon">🎞️</span>
+                <span class="thumb-frame">#{{ match.frameNumber }}</span>
+              </ng-container>
+            </div>
+
+            <!-- Match Details -->
+            <div class="match-details">
+              <div class="match-header-row">
+                <span class="match-track">{{ match.trackId }}</span>
+                <span class="match-ts">{{ formatTimestamp(match.timestamp) }}</span>
+              </div>
+
+              <!-- Confidence Bar -->
+              <div class="confidence-row">
+                <div class="progress-bar conf-bar">
+                  <div class="progress-fill conf-fill"
+                       [style.width.%]="match.confidence * 100"
+                       [class.fill-confirmed]="match.reviewState === 'confirmed'"
+                       [class.fill-rejected]="match.reviewState === 'rejected'">
+                  </div>
+                </div>
+                <span class="conf-pct">{{ (match.confidence * 100).toFixed(0) }}%</span>
+              </div>
+
+              <!-- Review State -->
+              <div class="review-state-row">
+                <span class="review-chip"
+                      [class.chip-confirmed]="match.reviewState === 'confirmed'"
+                      [class.chip-rejected]="match.reviewState === 'rejected'"
+                      [class.chip-unreviewed]="match.reviewState === 'unreviewed'">
+                  {{ match.reviewState === 'unreviewed' ? '○ Unreviewed' :
+                     match.reviewState === 'confirmed' ? '✓ Confirmed' : '✗ Rejected' }}
+                </span>
+              </div>
+
+              <!-- Rejection Reason (if set) -->
+              <div class="rejection-note" *ngIf="match.rejectionReason">
+                {{ match.rejectionReason }}
+              </div>
+
+              <!-- Rejection Input (inline) -->
+              <div class="rejection-input-area" *ngIf="showRejectionInput && selectedMatch?.id === match.id" (click)="$event.stopPropagation()">
+                <input type="text" placeholder="Reason for rejection (optional)" [(ngModel)]="rejectionReason" class="rejection-text-input" />
+                <div class="rejection-actions">
+                  <button class="btn btn-danger btn-sm" (click)="submitRejection(match)">Confirm Reject</button>
+                  <button class="btn btn-ghost btn-sm" (click)="cancelRejection()">Cancel</button>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="match-actions" *ngIf="!(showRejectionInput && selectedMatch?.id === match.id)" (click)="$event.stopPropagation()">
+                <button class="btn btn-success btn-sm"
+                        [class.active-state]="match.reviewState === 'confirmed'"
+                        (click)="confirmMatch(match)">
+                  ✓
+                </button>
+                <button class="btn btn-danger btn-sm"
+                        [class.active-state]="match.reviewState === 'rejected'"
+                        (click)="startRejectMatch(match)">
+                  ✗
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Tag Crop Panel -->
+      <div class="card tag-crop-panel">
+        <div class="card-header">
+          <span class="card-title">Tag Crop</span>
+        </div>
+
+        <div class="tag-crop-content" *ngIf="selectedMatch">
+          <div class="crop-display">
+            <div class="real-crop-container" *ngIf="selectedMatch.tagCropUrl">
+              <img [src]="selectedMatch.tagCropUrl" alt="Tag Crop" class="real-crop-img">
+            </div>
+            <div class="crop-placeholder" *ngIf="!selectedMatch.tagCropUrl">
+              <div class="crop-box"
+                   [class.crop-confirmed]="selectedMatch.reviewState === 'confirmed'"
+                   [class.crop-rejected]="selectedMatch.reviewState === 'rejected'">
+                <div class="crop-inner">
+                  <span class="crop-icon">🏷️</span>
+                  <span class="crop-label">Tag Region</span>
+                  <span class="crop-dims">
+                    {{ selectedMatch.boundingBox.width }}×{{ selectedMatch.boundingBox.height }}px
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="crop-info">
+            <div class="info-row">
+              <span class="info-label">Track ID</span>
+              <span class="info-value">{{ selectedMatch.trackId }}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Confidence</span>
+              <span class="info-value conf-value">{{ (selectedMatch.confidence * 100).toFixed(1) }}%</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Position</span>
+              <span class="info-value">{{ selectedMatch.boundingBox.x }}, {{ selectedMatch.boundingBox.y }}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Size</span>
+              <span class="info-value">{{ selectedMatch.boundingBox.width }}×{{ selectedMatch.boundingBox.height }}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Frame</span>
+              <span class="info-value">#{{ selectedMatch.frameNumber }}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Timestamp</span>
+              <span class="info-value">{{ formatTimestamp(selectedMatch.timestamp) }}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Review</span>
+              <span class="info-value"
+                    [class.text-confirmed]="selectedMatch.reviewState === 'confirmed'"
+                    [class.text-rejected]="selectedMatch.reviewState === 'rejected'">
+                {{ selectedMatch.reviewState | titlecase }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="crop-empty" *ngIf="!selectedMatch">
+          <span class="crop-empty-icon">🔍</span>
+          <p>Select a match to view the cropped tag region</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Export Bar -->
+    <div class="export-bar card">
+      <span class="export-label">Export Results</span>
+      <div class="export-buttons">
+        <button class="btn btn-secondary" (click)="downloadJSON()">
+          📄 Download JSON
+        </button>
+        <button class="btn btn-secondary" (click)="downloadCSV()">
+          📊 Download CSV
+        </button>
+        <button class="btn btn-secondary" (click)="downloadReviewSummary()">
+          📋 Download Review Summary
+        </button>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- Not Found -->
+  <div class="empty-state" *ngIf="!loading && !analysis">
+    <div class="empty-icon">🔍</div>
+    <h3>Analysis not found</h3>
+    <p>The requested analysis could not be found.</p>
+  </div>
+</div>
+

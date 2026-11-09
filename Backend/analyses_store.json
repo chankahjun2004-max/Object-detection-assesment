@@ -1,0 +1,4723 @@
+{
+  "analyses": [
+    {
+      "id": "a001",
+      "clipName": "warehouse_cam_01_2024-01-15.mp4",
+      "uploadDate": "2024-01-15T09:23:00",
+      "status": "complete",
+      "duration": "4:32",
+      "matchCount": 7,
+      "reviewStatus": "reviewed",
+      "framesAnalyzed": 8160,
+      "modelVersion": "v2.3.1",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    },
+    {
+      "id": "a002",
+      "clipName": "entrance_cam_feed_jan16.mp4",
+      "uploadDate": "2024-01-16T14:05:00",
+      "status": "complete",
+      "duration": "2:15",
+      "matchCount": 3,
+      "reviewStatus": "in-progress",
+      "framesAnalyzed": 4050,
+      "modelVersion": "v2.3.1",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    },
+    {
+      "id": "a003",
+      "clipName": "loading_dock_footage_0117.mp4",
+      "uploadDate": "2024-01-17T08:45:00",
+      "status": "processing",
+      "duration": "6:10",
+      "matchCount": 0,
+      "reviewStatus": "unreviewed",
+      "framesAnalyzed": 3200,
+      "modelVersion": "v2.3.1",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    },
+    {
+      "id": "a004",
+      "clipName": "perimeter_scan_night_0117.mp4",
+      "uploadDate": "2024-01-17T22:00:00",
+      "status": "queued",
+      "duration": "10:00",
+      "matchCount": 0,
+      "reviewStatus": "unreviewed",
+      "framesAnalyzed": 0,
+      "modelVersion": "v2.3.1",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    },
+    {
+      "id": "a005",
+      "clipName": "office_corridor_jan14.mp4",
+      "uploadDate": "2024-01-14T11:30:00",
+      "status": "failed",
+      "duration": "1:48",
+      "matchCount": 0,
+      "reviewStatus": "unreviewed",
+      "framesAnalyzed": 0,
+      "modelVersion": "v2.3.0",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    },
+    {
+      "id": "a006",
+      "clipName": "rooftop_cam_20240113.mp4",
+      "uploadDate": "2024-01-13T16:00:00",
+      "status": "complete",
+      "duration": "3:55",
+      "matchCount": 5,
+      "reviewStatus": "unreviewed",
+      "framesAnalyzed": 7050,
+      "modelVersion": "v2.3.0",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    },
+    {
+      "id": "a_sample_test",
+      "clipName": "sample.mp4",
+      "uploadDate": "2026-11-09T21:11:38.951616",
+      "status": "complete",
+      "duration": "0:53",
+      "matchCount": 247,
+      "reviewStatus": "unreviewed",
+      "framesAnalyzed": 135,
+      "modelVersion": "YOLOv8-ByteTrack-v2.3.1",
+      "videoUrl": null,
+      "referenceImageUrl": null
+    }
+  ],
+  "matches": [
+    {
+      "id": "m001",
+      "analysisId": "a001",
+      "timestamp": 15.4,
+      "frameNumber": 462,
+      "trackId": "TRK-001",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 120.0,
+        "y": 85.0,
+        "width": 60.0,
+        "height": 90.0
+      },
+      "reviewState": "confirmed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m002",
+      "analysisId": "a001",
+      "timestamp": 32.1,
+      "frameNumber": 963,
+      "trackId": "TRK-001",
+      "confidence": 0.87,
+      "boundingBox": {
+        "x": 145.0,
+        "y": 90.0,
+        "width": 58.0,
+        "height": 88.0
+      },
+      "reviewState": "confirmed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m003",
+      "analysisId": "a001",
+      "timestamp": 48.7,
+      "frameNumber": 1461,
+      "trackId": "TRK-002",
+      "confidence": 0.78,
+      "boundingBox": {
+        "x": 200.0,
+        "y": 110.0,
+        "width": 65.0,
+        "height": 95.0
+      },
+      "reviewState": "rejected",
+      "rejectionReason": "False positive - shadow",
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m004",
+      "analysisId": "a001",
+      "timestamp": 72.3,
+      "frameNumber": 2169,
+      "trackId": "TRK-001",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 130.0,
+        "y": 80.0,
+        "width": 62.0,
+        "height": 92.0
+      },
+      "reviewState": "confirmed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m005",
+      "analysisId": "a001",
+      "timestamp": 95.6,
+      "frameNumber": 2868,
+      "trackId": "TRK-003",
+      "confidence": 0.65,
+      "boundingBox": {
+        "x": 300.0,
+        "y": 150.0,
+        "width": 55.0,
+        "height": 85.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m006",
+      "analysisId": "a001",
+      "timestamp": 118.2,
+      "frameNumber": 3546,
+      "trackId": "TRK-003",
+      "confidence": 0.72,
+      "boundingBox": {
+        "x": 310.0,
+        "y": 155.0,
+        "width": 57.0,
+        "height": 87.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m007",
+      "analysisId": "a001",
+      "timestamp": 145.9,
+      "frameNumber": 4377,
+      "trackId": "TRK-004",
+      "confidence": 0.88,
+      "boundingBox": {
+        "x": 180.0,
+        "y": 100.0,
+        "width": 60.0,
+        "height": 90.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m013",
+      "analysisId": "a002",
+      "timestamp": 20.0,
+      "frameNumber": 600,
+      "trackId": "TRK-020",
+      "confidence": 0.85,
+      "boundingBox": {
+        "x": 140.0,
+        "y": 90.0,
+        "width": 60.0,
+        "height": 90.0
+      },
+      "reviewState": "confirmed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m014",
+      "analysisId": "a002",
+      "timestamp": 55.5,
+      "frameNumber": 1665,
+      "trackId": "TRK-021",
+      "confidence": 0.69,
+      "boundingBox": {
+        "x": 260.0,
+        "y": 130.0,
+        "width": 56.0,
+        "height": 86.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m015",
+      "analysisId": "a002",
+      "timestamp": 90.1,
+      "frameNumber": 2703,
+      "trackId": "TRK-020",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 148.0,
+        "y": 88.0,
+        "width": 61.0,
+        "height": 91.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": null,
+      "tagCropUrl": null
+    },
+    {
+      "id": "m_a_sample_test_001",
+      "analysisId": "a_sample_test",
+      "timestamp": 0.4,
+      "frameNumber": 10,
+      "trackId": "TRK-001",
+      "confidence": 0.81,
+      "boundingBox": {
+        "x": 421.0,
+        "y": 0.0,
+        "width": 79.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_10_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_10_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_002",
+      "analysisId": "a_sample_test",
+      "timestamp": 0.4,
+      "frameNumber": 10,
+      "trackId": "TRK-001",
+      "confidence": 0.86,
+      "boundingBox": {
+        "x": 691.0,
+        "y": 163.0,
+        "width": 89.0,
+        "height": 81.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_10_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_10_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_003",
+      "analysisId": "a_sample_test",
+      "timestamp": 0.8,
+      "frameNumber": 20,
+      "trackId": "TRK-001",
+      "confidence": 0.84,
+      "boundingBox": {
+        "x": 421.0,
+        "y": 0.0,
+        "width": 78.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_20_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_20_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_004",
+      "analysisId": "a_sample_test",
+      "timestamp": 0.8,
+      "frameNumber": 20,
+      "trackId": "TRK-002",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 691.0,
+        "y": 158.0,
+        "width": 88.0,
+        "height": 81.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_20_TRK-002.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_20_TRK-002.jpg"
+    },
+    {
+      "id": "m_a_sample_test_005",
+      "analysisId": "a_sample_test",
+      "timestamp": 1.2,
+      "frameNumber": 30,
+      "trackId": "TRK-002",
+      "confidence": 0.84,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 130.0,
+        "width": 99.0,
+        "height": 90.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_30_TRK-002.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_30_TRK-002.jpg"
+    },
+    {
+      "id": "m_a_sample_test_006",
+      "analysisId": "a_sample_test",
+      "timestamp": 1.2,
+      "frameNumber": 30,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 590.0,
+        "y": 287.0,
+        "width": 111.0,
+        "height": 132.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_30_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_30_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_007",
+      "analysisId": "a_sample_test",
+      "timestamp": 1.6,
+      "frameNumber": 40,
+      "trackId": "TRK-002",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 677.0,
+        "y": 116.0,
+        "width": 106.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_40_TRK-002.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_40_TRK-002.jpg"
+    },
+    {
+      "id": "m_a_sample_test_008",
+      "analysisId": "a_sample_test",
+      "timestamp": 2.0,
+      "frameNumber": 50,
+      "trackId": "TRK-002",
+      "confidence": 0.86,
+      "boundingBox": {
+        "x": 674.0,
+        "y": 116.0,
+        "width": 104.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_50_TRK-002.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_50_TRK-002.jpg"
+    },
+    {
+      "id": "m_a_sample_test_009",
+      "analysisId": "a_sample_test",
+      "timestamp": 2.0,
+      "frameNumber": 50,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 592.0,
+        "y": 291.0,
+        "width": 107.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_50_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_50_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_010",
+      "analysisId": "a_sample_test",
+      "timestamp": 2.4,
+      "frameNumber": 60,
+      "trackId": "TRK-002",
+      "confidence": 0.81,
+      "boundingBox": {
+        "x": 676.0,
+        "y": 117.0,
+        "width": 103.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_60_TRK-002.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_60_TRK-002.jpg"
+    },
+    {
+      "id": "m_a_sample_test_011",
+      "analysisId": "a_sample_test",
+      "timestamp": 2.4,
+      "frameNumber": 60,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 592.0,
+        "y": 290.0,
+        "width": 107.0,
+        "height": 128.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_60_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_60_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_012",
+      "analysisId": "a_sample_test",
+      "timestamp": 2.8,
+      "frameNumber": 70,
+      "trackId": "TRK-002",
+      "confidence": 0.8,
+      "boundingBox": {
+        "x": 682.0,
+        "y": 122.0,
+        "width": 98.0,
+        "height": 90.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_70_TRK-002.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_70_TRK-002.jpg"
+    },
+    {
+      "id": "m_a_sample_test_013",
+      "analysisId": "a_sample_test",
+      "timestamp": 2.8,
+      "frameNumber": 70,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 591.0,
+        "y": 289.0,
+        "width": 109.0,
+        "height": 129.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_70_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_70_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_014",
+      "analysisId": "a_sample_test",
+      "timestamp": 3.6,
+      "frameNumber": 90,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 591.0,
+        "y": 291.0,
+        "width": 107.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_90_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_90_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_015",
+      "analysisId": "a_sample_test",
+      "timestamp": 4.0,
+      "frameNumber": 100,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 591.0,
+        "y": 292.0,
+        "width": 107.0,
+        "height": 126.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_100_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_100_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_016",
+      "analysisId": "a_sample_test",
+      "timestamp": 4.4,
+      "frameNumber": 110,
+      "trackId": "TRK-003",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 590.0,
+        "y": 289.0,
+        "width": 108.0,
+        "height": 129.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_110_TRK-003.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_110_TRK-003.jpg"
+    },
+    {
+      "id": "m_a_sample_test_017",
+      "analysisId": "a_sample_test",
+      "timestamp": 4.4,
+      "frameNumber": 110,
+      "trackId": "TRK-010",
+      "confidence": 0.87,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 165.0,
+        "width": 97.0,
+        "height": 75.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_110_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_110_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_018",
+      "analysisId": "a_sample_test",
+      "timestamp": 4.8,
+      "frameNumber": 120,
+      "trackId": "TRK-001",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 533.0,
+        "y": 13.0,
+        "width": 82.0,
+        "height": 90.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_120_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_120_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_019",
+      "analysisId": "a_sample_test",
+      "timestamp": 5.2,
+      "frameNumber": 130,
+      "trackId": "TRK-011",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 537.0,
+        "y": 13.0,
+        "width": 77.0,
+        "height": 84.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_130_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_130_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_020",
+      "analysisId": "a_sample_test",
+      "timestamp": 5.6,
+      "frameNumber": 140,
+      "trackId": "TRK-011",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 536.0,
+        "y": 13.0,
+        "width": 79.0,
+        "height": 86.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_140_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_140_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_021",
+      "analysisId": "a_sample_test",
+      "timestamp": 6.0,
+      "frameNumber": 150,
+      "trackId": "TRK-011",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 534.0,
+        "y": 11.0,
+        "width": 81.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_150_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_150_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_022",
+      "analysisId": "a_sample_test",
+      "timestamp": 6.0,
+      "frameNumber": 150,
+      "trackId": "TRK-010",
+      "confidence": 0.97,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 101.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_150_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_150_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_023",
+      "analysisId": "a_sample_test",
+      "timestamp": 6.4,
+      "frameNumber": 160,
+      "trackId": "TRK-010",
+      "confidence": 0.97,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 100.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_160_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_160_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_024",
+      "analysisId": "a_sample_test",
+      "timestamp": 6.8,
+      "frameNumber": 170,
+      "trackId": "TRK-010",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 101.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_170_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_170_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_025",
+      "analysisId": "a_sample_test",
+      "timestamp": 6.8,
+      "frameNumber": 170,
+      "trackId": "TRK-011",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 529.0,
+        "y": 10.0,
+        "width": 85.0,
+        "height": 92.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_170_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_170_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_026",
+      "analysisId": "a_sample_test",
+      "timestamp": 7.2,
+      "frameNumber": 180,
+      "trackId": "TRK-001",
+      "confidence": 0.96,
+      "boundingBox": {
+        "x": 211.0,
+        "y": 126.0,
+        "width": 94.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_180_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_180_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_027",
+      "analysisId": "a_sample_test",
+      "timestamp": 7.6,
+      "frameNumber": 190,
+      "trackId": "TRK-014",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 213.0,
+        "y": 126.0,
+        "width": 89.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_190_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_190_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_028",
+      "analysisId": "a_sample_test",
+      "timestamp": 8.4,
+      "frameNumber": 210,
+      "trackId": "TRK-010",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 162.0,
+        "width": 100.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_210_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_210_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_029",
+      "analysisId": "a_sample_test",
+      "timestamp": 8.8,
+      "frameNumber": 220,
+      "trackId": "TRK-010",
+      "confidence": 0.96,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 97.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_220_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_220_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_030",
+      "analysisId": "a_sample_test",
+      "timestamp": 9.6,
+      "frameNumber": 240,
+      "trackId": "TRK-014",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 142.0,
+        "width": 81.0,
+        "height": 88.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_240_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_240_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_031",
+      "analysisId": "a_sample_test",
+      "timestamp": 10.4,
+      "frameNumber": 260,
+      "trackId": "TRK-014",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 143.0,
+        "width": 83.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_260_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_260_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_032",
+      "analysisId": "a_sample_test",
+      "timestamp": 10.8,
+      "frameNumber": 270,
+      "trackId": "TRK-014",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 142.0,
+        "width": 82.0,
+        "height": 88.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_270_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_270_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_033",
+      "analysisId": "a_sample_test",
+      "timestamp": 10.8,
+      "frameNumber": 270,
+      "trackId": "TRK-010",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 164.0,
+        "width": 92.0,
+        "height": 73.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_270_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_270_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_034",
+      "analysisId": "a_sample_test",
+      "timestamp": 11.2,
+      "frameNumber": 280,
+      "trackId": "TRK-014",
+      "confidence": 0.95,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 142.0,
+        "width": 84.0,
+        "height": 90.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_280_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_280_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_035",
+      "analysisId": "a_sample_test",
+      "timestamp": 11.2,
+      "frameNumber": 280,
+      "trackId": "TRK-010",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 691.0,
+        "y": 164.0,
+        "width": 90.0,
+        "height": 70.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_280_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_280_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_036",
+      "analysisId": "a_sample_test",
+      "timestamp": 11.6,
+      "frameNumber": 290,
+      "trackId": "TRK-014",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 142.0,
+        "width": 83.0,
+        "height": 88.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_290_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_290_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_037",
+      "analysisId": "a_sample_test",
+      "timestamp": 11.6,
+      "frameNumber": 290,
+      "trackId": "TRK-010",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 692.0,
+        "y": 164.0,
+        "width": 88.0,
+        "height": 68.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_290_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_290_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_038",
+      "analysisId": "a_sample_test",
+      "timestamp": 11.6,
+      "frameNumber": 290,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 41.0,
+        "width": 73.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_290_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_290_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_039",
+      "analysisId": "a_sample_test",
+      "timestamp": 12.0,
+      "frameNumber": 300,
+      "trackId": "TRK-014",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 141.0,
+        "width": 83.0,
+        "height": 88.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_300_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_300_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_040",
+      "analysisId": "a_sample_test",
+      "timestamp": 12.0,
+      "frameNumber": 300,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 95.0,
+        "height": 75.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_300_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_300_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_041",
+      "analysisId": "a_sample_test",
+      "timestamp": 12.4,
+      "frameNumber": 310,
+      "trackId": "TRK-014",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 139.0,
+        "width": 87.0,
+        "height": 91.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_310_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_310_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_042",
+      "analysisId": "a_sample_test",
+      "timestamp": 12.4,
+      "frameNumber": 310,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 96.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_310_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_310_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_043",
+      "analysisId": "a_sample_test",
+      "timestamp": 12.8,
+      "frameNumber": 320,
+      "trackId": "TRK-014",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 138.0,
+        "width": 88.0,
+        "height": 93.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_320_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_320_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_044",
+      "analysisId": "a_sample_test",
+      "timestamp": 12.8,
+      "frameNumber": 320,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 163.0,
+        "width": 97.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_320_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_320_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_045",
+      "analysisId": "a_sample_test",
+      "timestamp": 13.2,
+      "frameNumber": 330,
+      "trackId": "TRK-014",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 139.0,
+        "width": 89.0,
+        "height": 93.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_330_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_330_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_046",
+      "analysisId": "a_sample_test",
+      "timestamp": 13.2,
+      "frameNumber": 330,
+      "trackId": "TRK-010",
+      "confidence": 0.99,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 163.0,
+        "width": 97.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_330_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_330_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_047",
+      "analysisId": "a_sample_test",
+      "timestamp": 13.6,
+      "frameNumber": 340,
+      "trackId": "TRK-014",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 215.0,
+        "y": 139.0,
+        "width": 90.0,
+        "height": 94.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_340_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_340_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_048",
+      "analysisId": "a_sample_test",
+      "timestamp": 13.6,
+      "frameNumber": 340,
+      "trackId": "TRK-010",
+      "confidence": 0.98,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 96.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_340_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_340_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_049",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.0,
+      "frameNumber": 350,
+      "trackId": "TRK-014",
+      "confidence": 0.95,
+      "boundingBox": {
+        "x": 213.0,
+        "y": 139.0,
+        "width": 92.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_350_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_350_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_050",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.0,
+      "frameNumber": 350,
+      "trackId": "TRK-010",
+      "confidence": 0.98,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 95.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_350_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_350_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_051",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.4,
+      "frameNumber": 360,
+      "trackId": "TRK-014",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 216.0,
+        "y": 139.0,
+        "width": 83.0,
+        "height": 83.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_360_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_360_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_052",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.4,
+      "frameNumber": 360,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 95.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_360_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_360_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_053",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.8,
+      "frameNumber": 370,
+      "trackId": "TRK-014",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 214.0,
+        "y": 139.0,
+        "width": 88.0,
+        "height": 88.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_370_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_370_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_054",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.8,
+      "frameNumber": 370,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 95.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_370_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_370_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_055",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.8,
+      "frameNumber": 370,
+      "trackId": "TRK-011",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 463.0,
+        "y": 22.0,
+        "width": 142.0,
+        "height": 172.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_370_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_370_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_056",
+      "analysisId": "a_sample_test",
+      "timestamp": 14.8,
+      "frameNumber": 370,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 39.0,
+        "width": 76.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_370_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_370_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_057",
+      "analysisId": "a_sample_test",
+      "timestamp": 15.2,
+      "frameNumber": 380,
+      "trackId": "TRK-014",
+      "confidence": 0.85,
+      "boundingBox": {
+        "x": 215.0,
+        "y": 138.0,
+        "width": 88.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_380_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_380_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_058",
+      "analysisId": "a_sample_test",
+      "timestamp": 15.2,
+      "frameNumber": 380,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_380_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_380_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_059",
+      "analysisId": "a_sample_test",
+      "timestamp": 15.2,
+      "frameNumber": 380,
+      "trackId": "TRK-011",
+      "confidence": 0.96,
+      "boundingBox": {
+        "x": 460.0,
+        "y": 12.0,
+        "width": 133.0,
+        "height": 171.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_380_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_380_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_060",
+      "analysisId": "a_sample_test",
+      "timestamp": 15.2,
+      "frameNumber": 380,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 41.0,
+        "width": 76.0,
+        "height": 103.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_380_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_380_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_061",
+      "analysisId": "a_sample_test",
+      "timestamp": 15.6,
+      "frameNumber": 390,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_390_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_390_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_062",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.0,
+      "frameNumber": 400,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_400_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_400_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_063",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.0,
+      "frameNumber": 400,
+      "trackId": "TRK-023",
+      "confidence": 0.96,
+      "boundingBox": {
+        "x": 268.0,
+        "y": 129.0,
+        "width": 108.0,
+        "height": 68.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_400_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_400_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_064",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.4,
+      "frameNumber": 410,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_410_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_410_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_065",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.4,
+      "frameNumber": 410,
+      "trackId": "TRK-014",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 210.0,
+        "y": 130.0,
+        "width": 102.0,
+        "height": 103.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_410_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_410_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_066",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.8,
+      "frameNumber": 420,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_420_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_420_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_067",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.8,
+      "frameNumber": 420,
+      "trackId": "TRK-014",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 212.0,
+        "y": 136.0,
+        "width": 96.0,
+        "height": 97.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_420_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_420_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_068",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.8,
+      "frameNumber": 420,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 216.0,
+        "y": 47.0,
+        "width": 76.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_420_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_420_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_069",
+      "analysisId": "a_sample_test",
+      "timestamp": 16.8,
+      "frameNumber": 420,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 255.0,
+        "y": 108.0,
+        "width": 139.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_420_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_420_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_070",
+      "analysisId": "a_sample_test",
+      "timestamp": 17.2,
+      "frameNumber": 430,
+      "trackId": "TRK-014",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 214.0,
+        "y": 140.0,
+        "width": 92.0,
+        "height": 91.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_430_TRK-014.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_430_TRK-014.jpg"
+    },
+    {
+      "id": "m_a_sample_test_071",
+      "analysisId": "a_sample_test",
+      "timestamp": 17.2,
+      "frameNumber": 430,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 214.0,
+        "y": 48.0,
+        "width": 77.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_430_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_430_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_072",
+      "analysisId": "a_sample_test",
+      "timestamp": 17.2,
+      "frameNumber": 430,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 255.0,
+        "y": 105.0,
+        "width": 141.0,
+        "height": 92.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_430_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_430_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_073",
+      "analysisId": "a_sample_test",
+      "timestamp": 17.6,
+      "frameNumber": 440,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 238.0,
+        "y": 78.0,
+        "width": 178.0,
+        "height": 119.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_440_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_440_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_074",
+      "analysisId": "a_sample_test",
+      "timestamp": 17.6,
+      "frameNumber": 440,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_440_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_440_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_075",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.0,
+      "frameNumber": 450,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 261.0,
+        "y": 72.0,
+        "width": 182.0,
+        "height": 124.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_450_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_450_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_076",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.0,
+      "frameNumber": 450,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 80.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_450_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_450_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_077",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.0,
+      "frameNumber": 450,
+      "trackId": "TRK-011",
+      "confidence": 0.98,
+      "boundingBox": {
+        "x": 459.0,
+        "y": 45.0,
+        "width": 137.0,
+        "height": 195.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_450_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_450_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_078",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.4,
+      "frameNumber": 460,
+      "trackId": "TRK-023",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 282.0,
+        "y": 71.0,
+        "width": 181.0,
+        "height": 125.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_460_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_460_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_079",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.4,
+      "frameNumber": 460,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 163.0,
+        "width": 94.0,
+        "height": 80.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_460_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_460_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_080",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.8,
+      "frameNumber": 470,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 296.0,
+        "y": 81.0,
+        "width": 165.0,
+        "height": 116.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_470_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_470_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_081",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.8,
+      "frameNumber": 470,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 93.0,
+        "height": 80.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_470_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_470_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_082",
+      "analysisId": "a_sample_test",
+      "timestamp": 18.8,
+      "frameNumber": 470,
+      "trackId": "TRK-011",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 457.0,
+        "y": 51.0,
+        "width": 133.0,
+        "height": 202.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_470_TRK-011.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_470_TRK-011.jpg"
+    },
+    {
+      "id": "m_a_sample_test_083",
+      "analysisId": "a_sample_test",
+      "timestamp": 19.2,
+      "frameNumber": 480,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 292.0,
+        "y": 79.0,
+        "width": 163.0,
+        "height": 116.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_480_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_480_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_084",
+      "analysisId": "a_sample_test",
+      "timestamp": 19.2,
+      "frameNumber": 480,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 92.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_480_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_480_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_085",
+      "analysisId": "a_sample_test",
+      "timestamp": 19.6,
+      "frameNumber": 490,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 277.0,
+        "y": 72.0,
+        "width": 167.0,
+        "height": 123.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_490_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_490_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_086",
+      "analysisId": "a_sample_test",
+      "timestamp": 19.6,
+      "frameNumber": 490,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 92.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_490_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_490_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_087",
+      "analysisId": "a_sample_test",
+      "timestamp": 20.0,
+      "frameNumber": 500,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 283.0,
+        "y": 70.0,
+        "width": 165.0,
+        "height": 126.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_500_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_500_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_088",
+      "analysisId": "a_sample_test",
+      "timestamp": 20.0,
+      "frameNumber": 500,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 92.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_500_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_500_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_089",
+      "analysisId": "a_sample_test",
+      "timestamp": 20.4,
+      "frameNumber": 510,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 288.0,
+        "y": 69.0,
+        "width": 165.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_510_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_510_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_090",
+      "analysisId": "a_sample_test",
+      "timestamp": 20.4,
+      "frameNumber": 510,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 92.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_510_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_510_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_091",
+      "analysisId": "a_sample_test",
+      "timestamp": 20.8,
+      "frameNumber": 520,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 291.0,
+        "y": 68.0,
+        "width": 163.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_520_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_520_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_092",
+      "analysisId": "a_sample_test",
+      "timestamp": 20.8,
+      "frameNumber": 520,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 91.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_520_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_520_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_093",
+      "analysisId": "a_sample_test",
+      "timestamp": 21.2,
+      "frameNumber": 530,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 290.0,
+        "y": 68.0,
+        "width": 159.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_530_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_530_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_094",
+      "analysisId": "a_sample_test",
+      "timestamp": 21.2,
+      "frameNumber": 530,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 91.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_530_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_530_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_095",
+      "analysisId": "a_sample_test",
+      "timestamp": 21.6,
+      "frameNumber": 540,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 289.0,
+        "y": 68.0,
+        "width": 156.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_540_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_540_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_096",
+      "analysisId": "a_sample_test",
+      "timestamp": 21.6,
+      "frameNumber": 540,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 90.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_540_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_540_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_097",
+      "analysisId": "a_sample_test",
+      "timestamp": 21.6,
+      "frameNumber": 540,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 519.0,
+        "y": 8.0,
+        "width": 87.0,
+        "height": 87.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_540_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_540_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_098",
+      "analysisId": "a_sample_test",
+      "timestamp": 22.0,
+      "frameNumber": 550,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 289.0,
+        "y": 68.0,
+        "width": 152.0,
+        "height": 127.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_550_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_550_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_099",
+      "analysisId": "a_sample_test",
+      "timestamp": 22.0,
+      "frameNumber": 550,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 89.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_550_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_550_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_100",
+      "analysisId": "a_sample_test",
+      "timestamp": 22.4,
+      "frameNumber": 560,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 296.0,
+        "y": 77.0,
+        "width": 139.0,
+        "height": 119.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_560_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_560_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_101",
+      "analysisId": "a_sample_test",
+      "timestamp": 22.4,
+      "frameNumber": 560,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 89.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_560_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_560_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_102",
+      "analysisId": "a_sample_test",
+      "timestamp": 22.8,
+      "frameNumber": 570,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 295.0,
+        "y": 72.0,
+        "width": 141.0,
+        "height": 122.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_570_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_570_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_103",
+      "analysisId": "a_sample_test",
+      "timestamp": 23.2,
+      "frameNumber": 580,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 291.0,
+        "y": 70.0,
+        "width": 143.0,
+        "height": 124.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_580_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_580_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_104",
+      "analysisId": "a_sample_test",
+      "timestamp": 23.6,
+      "frameNumber": 590,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 291.0,
+        "y": 70.0,
+        "width": 142.0,
+        "height": 124.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_590_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_590_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_105",
+      "analysisId": "a_sample_test",
+      "timestamp": 23.6,
+      "frameNumber": 590,
+      "trackId": "TRK-010",
+      "confidence": 0.99,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 90.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_590_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_590_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_106",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.0,
+      "frameNumber": 600,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 284.0,
+        "y": 70.0,
+        "width": 138.0,
+        "height": 125.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_600_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_600_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_107",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.0,
+      "frameNumber": 600,
+      "trackId": "TRK-033",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 589.0,
+        "y": 329.0,
+        "width": 111.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_600_TRK-033.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_600_TRK-033.jpg"
+    },
+    {
+      "id": "m_a_sample_test_108",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.0,
+      "frameNumber": 600,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 90.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_600_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_600_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_109",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.0,
+      "frameNumber": 600,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 200.0,
+        "y": 14.0,
+        "width": 83.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_600_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_600_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_110",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.0,
+      "frameNumber": 600,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 517.0,
+        "y": 8.0,
+        "width": 101.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_600_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_600_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_111",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.4,
+      "frameNumber": 610,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 271.0,
+        "y": 69.0,
+        "width": 135.0,
+        "height": 126.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_610_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_610_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_112",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.4,
+      "frameNumber": 610,
+      "trackId": "TRK-010",
+      "confidence": 0.95,
+      "boundingBox": {
+        "x": 691.0,
+        "y": 164.0,
+        "width": 90.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_610_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_610_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_113",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.4,
+      "frameNumber": 610,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 516.0,
+        "y": 10.0,
+        "width": 99.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_610_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_610_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_114",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.8,
+      "frameNumber": 620,
+      "trackId": "TRK-010",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 692.0,
+        "y": 164.0,
+        "width": 89.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_620_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_620_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_115",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.8,
+      "frameNumber": 620,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 516.0,
+        "y": 9.0,
+        "width": 97.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_620_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_620_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_116",
+      "analysisId": "a_sample_test",
+      "timestamp": 24.8,
+      "frameNumber": 620,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 213.0,
+        "y": 34.0,
+        "width": 78.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_620_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_620_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_117",
+      "analysisId": "a_sample_test",
+      "timestamp": 25.2,
+      "frameNumber": 630,
+      "trackId": "TRK-010",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 693.0,
+        "y": 164.0,
+        "width": 89.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_630_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_630_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_118",
+      "analysisId": "a_sample_test",
+      "timestamp": 25.2,
+      "frameNumber": 630,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 516.0,
+        "y": 9.0,
+        "width": 97.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_630_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_630_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_119",
+      "analysisId": "a_sample_test",
+      "timestamp": 25.6,
+      "frameNumber": 640,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 516.0,
+        "y": 10.0,
+        "width": 95.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_640_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_640_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_120",
+      "analysisId": "a_sample_test",
+      "timestamp": 25.6,
+      "frameNumber": 640,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 36.0,
+        "width": 80.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_640_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_640_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_121",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.0,
+      "frameNumber": 650,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 287.0,
+        "y": 100.0,
+        "width": 100.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_650_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_650_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_122",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.0,
+      "frameNumber": 650,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 691.0,
+        "y": 163.0,
+        "width": 88.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_650_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_650_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_123",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.4,
+      "frameNumber": 660,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 164.0,
+        "width": 89.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_660_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_660_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_124",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.4,
+      "frameNumber": 660,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 36.0,
+        "width": 79.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_660_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_660_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_125",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.8,
+      "frameNumber": 670,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 164.0,
+        "width": 89.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_670_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_670_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_126",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.8,
+      "frameNumber": 670,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 36.0,
+        "width": 81.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_670_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_670_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_127",
+      "analysisId": "a_sample_test",
+      "timestamp": 26.8,
+      "frameNumber": 670,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 274.0,
+        "y": 83.0,
+        "width": 115.0,
+        "height": 113.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_670_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_670_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_128",
+      "analysisId": "a_sample_test",
+      "timestamp": 27.2,
+      "frameNumber": 680,
+      "trackId": "TRK-010",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 164.0,
+        "width": 90.0,
+        "height": 77.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_680_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_680_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_129",
+      "analysisId": "a_sample_test",
+      "timestamp": 27.2,
+      "frameNumber": 680,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 36.0,
+        "width": 82.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_680_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_680_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_130",
+      "analysisId": "a_sample_test",
+      "timestamp": 27.2,
+      "frameNumber": 680,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 274.0,
+        "y": 75.0,
+        "width": 117.0,
+        "height": 122.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_680_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_680_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_131",
+      "analysisId": "a_sample_test",
+      "timestamp": 27.6,
+      "frameNumber": 690,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 36.0,
+        "width": 82.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_690_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_690_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_132",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.0,
+      "frameNumber": 700,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 36.0,
+        "width": 82.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_700_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_700_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_133",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.0,
+      "frameNumber": 700,
+      "trackId": "TRK-010",
+      "confidence": 0.63,
+      "boundingBox": {
+        "x": 681.0,
+        "y": 138.0,
+        "width": 96.0,
+        "height": 82.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_700_TRK-010.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_700_TRK-010.jpg"
+    },
+    {
+      "id": "m_a_sample_test_134",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.0,
+      "frameNumber": 700,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 283.0,
+        "y": 94.0,
+        "width": 97.0,
+        "height": 103.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_700_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_700_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_135",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.4,
+      "frameNumber": 710,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 36.0,
+        "width": 83.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_710_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_710_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_136",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.4,
+      "frameNumber": 710,
+      "trackId": "TRK-023",
+      "confidence": 0.95,
+      "boundingBox": {
+        "x": 288.0,
+        "y": 101.0,
+        "width": 88.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_710_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_710_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_137",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.8,
+      "frameNumber": 720,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 35.0,
+        "width": 82.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_720_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_720_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_138",
+      "analysisId": "a_sample_test",
+      "timestamp": 28.8,
+      "frameNumber": 720,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 287.0,
+        "y": 98.0,
+        "width": 89.0,
+        "height": 97.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_720_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_720_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_139",
+      "analysisId": "a_sample_test",
+      "timestamp": 29.2,
+      "frameNumber": 730,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 35.0,
+        "width": 81.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_730_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_730_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_140",
+      "analysisId": "a_sample_test",
+      "timestamp": 29.6,
+      "frameNumber": 740,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 35.0,
+        "width": 83.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_740_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_740_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_141",
+      "analysisId": "a_sample_test",
+      "timestamp": 29.6,
+      "frameNumber": 740,
+      "trackId": "TRK-023",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 293.0,
+        "y": 105.0,
+        "width": 81.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_740_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_740_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_142",
+      "analysisId": "a_sample_test",
+      "timestamp": 30.0,
+      "frameNumber": 750,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 34.0,
+        "width": 82.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_750_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_750_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_143",
+      "analysisId": "a_sample_test",
+      "timestamp": 30.0,
+      "frameNumber": 750,
+      "trackId": "TRK-023",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 292.0,
+        "y": 104.0,
+        "width": 82.0,
+        "height": 90.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_750_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_750_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_144",
+      "analysisId": "a_sample_test",
+      "timestamp": 30.4,
+      "frameNumber": 760,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 524.0,
+        "y": 10.0,
+        "width": 86.0,
+        "height": 93.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_760_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_760_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_145",
+      "analysisId": "a_sample_test",
+      "timestamp": 30.8,
+      "frameNumber": 770,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 525.0,
+        "y": 9.0,
+        "width": 85.0,
+        "height": 94.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_770_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_770_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_146",
+      "analysisId": "a_sample_test",
+      "timestamp": 31.6,
+      "frameNumber": 790,
+      "trackId": "TRK-001",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 423.0,
+        "y": 0.0,
+        "width": 80.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_790_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_790_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_147",
+      "analysisId": "a_sample_test",
+      "timestamp": 32.4,
+      "frameNumber": 810,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 525.0,
+        "y": 8.0,
+        "width": 85.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_810_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_810_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_148",
+      "analysisId": "a_sample_test",
+      "timestamp": 32.8,
+      "frameNumber": 820,
+      "trackId": "TRK-001",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 424.0,
+        "y": 0.0,
+        "width": 79.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_820_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_820_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_149",
+      "analysisId": "a_sample_test",
+      "timestamp": 33.2,
+      "frameNumber": 830,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 290.0,
+        "y": 97.0,
+        "width": 89.0,
+        "height": 100.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_830_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_830_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_150",
+      "analysisId": "a_sample_test",
+      "timestamp": 33.2,
+      "frameNumber": 830,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 526.0,
+        "y": 9.0,
+        "width": 83.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_830_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_830_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_151",
+      "analysisId": "a_sample_test",
+      "timestamp": 33.6,
+      "frameNumber": 840,
+      "trackId": "TRK-040",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 676.0,
+        "y": 470.0,
+        "width": 110.0,
+        "height": 190.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_840_TRK-040.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_840_TRK-040.jpg"
+    },
+    {
+      "id": "m_a_sample_test_152",
+      "analysisId": "a_sample_test",
+      "timestamp": 33.6,
+      "frameNumber": 840,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 292.0,
+        "y": 93.0,
+        "width": 89.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_840_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_840_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_153",
+      "analysisId": "a_sample_test",
+      "timestamp": 33.6,
+      "frameNumber": 840,
+      "trackId": "TRK-026",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 524.0,
+        "y": 13.0,
+        "width": 83.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_840_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_840_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_154",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.0,
+      "frameNumber": 850,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 295.0,
+        "y": 95.0,
+        "width": 84.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_850_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_850_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_155",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.0,
+      "frameNumber": 850,
+      "trackId": "TRK-026",
+      "confidence": 0.49,
+      "boundingBox": {
+        "x": 529.0,
+        "y": 4.0,
+        "width": 83.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_850_TRK-026.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_850_TRK-026.jpg"
+    },
+    {
+      "id": "m_a_sample_test_156",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.0,
+      "frameNumber": 850,
+      "trackId": "TRK-041",
+      "confidence": 0.99,
+      "boundingBox": {
+        "x": 596.0,
+        "y": 39.0,
+        "width": 97.0,
+        "height": 134.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_850_TRK-041.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_850_TRK-041.jpg"
+    },
+    {
+      "id": "m_a_sample_test_157",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.0,
+      "frameNumber": 850,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 222.0,
+        "y": 37.0,
+        "width": 73.0,
+        "height": 91.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_850_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_850_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_158",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.4,
+      "frameNumber": 860,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 291.0,
+        "y": 82.0,
+        "width": 91.0,
+        "height": 115.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_860_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_860_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_159",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.4,
+      "frameNumber": 860,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 37.0,
+        "width": 76.0,
+        "height": 94.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_860_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_860_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_160",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.8,
+      "frameNumber": 870,
+      "trackId": "TRK-023",
+      "confidence": 0.99,
+      "boundingBox": {
+        "x": 293.0,
+        "y": 92.0,
+        "width": 83.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_870_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_870_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_161",
+      "analysisId": "a_sample_test",
+      "timestamp": 34.8,
+      "frameNumber": 870,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 218.0,
+        "y": 37.0,
+        "width": 81.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_870_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_870_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_162",
+      "analysisId": "a_sample_test",
+      "timestamp": 35.2,
+      "frameNumber": 880,
+      "trackId": "TRK-033",
+      "confidence": 0.76,
+      "boundingBox": {
+        "x": 577.0,
+        "y": 330.0,
+        "width": 139.0,
+        "height": 117.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_880_TRK-033.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_880_TRK-033.jpg"
+    },
+    {
+      "id": "m_a_sample_test_163",
+      "analysisId": "a_sample_test",
+      "timestamp": 36.0,
+      "frameNumber": 900,
+      "trackId": "TRK-001",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 691.0,
+        "y": 164.0,
+        "width": 89.0,
+        "height": 78.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_900_TRK-001.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_900_TRK-001.jpg"
+    },
+    {
+      "id": "m_a_sample_test_164",
+      "analysisId": "a_sample_test",
+      "timestamp": 36.4,
+      "frameNumber": 910,
+      "trackId": "TRK-044",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 89.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_910_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_910_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_165",
+      "analysisId": "a_sample_test",
+      "timestamp": 36.4,
+      "frameNumber": 910,
+      "trackId": "TRK-023",
+      "confidence": 0.84,
+      "boundingBox": {
+        "x": 298.0,
+        "y": 103.0,
+        "width": 74.0,
+        "height": 93.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_910_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_910_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_166",
+      "analysisId": "a_sample_test",
+      "timestamp": 36.8,
+      "frameNumber": 920,
+      "trackId": "TRK-044",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 688.0,
+        "y": 163.0,
+        "width": 90.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_920_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_920_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_167",
+      "analysisId": "a_sample_test",
+      "timestamp": 36.8,
+      "frameNumber": 920,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 222.0,
+        "y": 37.0,
+        "width": 76.0,
+        "height": 92.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_920_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_920_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_168",
+      "analysisId": "a_sample_test",
+      "timestamp": 37.2,
+      "frameNumber": 930,
+      "trackId": "TRK-044",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 689.0,
+        "y": 163.0,
+        "width": 89.0,
+        "height": 80.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_930_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_930_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_169",
+      "analysisId": "a_sample_test",
+      "timestamp": 37.2,
+      "frameNumber": 930,
+      "trackId": "TRK-023",
+      "confidence": 0.8,
+      "boundingBox": {
+        "x": 296.0,
+        "y": 102.0,
+        "width": 75.0,
+        "height": 94.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_930_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_930_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_170",
+      "analysisId": "a_sample_test",
+      "timestamp": 37.6,
+      "frameNumber": 940,
+      "trackId": "TRK-044",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 163.0,
+        "width": 90.0,
+        "height": 80.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_940_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_940_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_171",
+      "analysisId": "a_sample_test",
+      "timestamp": 37.6,
+      "frameNumber": 940,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 297.0,
+        "y": 110.0,
+        "width": 72.0,
+        "height": 86.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_940_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_940_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_172",
+      "analysisId": "a_sample_test",
+      "timestamp": 37.6,
+      "frameNumber": 940,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 37.0,
+        "width": 84.0,
+        "height": 103.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_940_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_940_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_173",
+      "analysisId": "a_sample_test",
+      "timestamp": 38.0,
+      "frameNumber": 950,
+      "trackId": "TRK-023",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 298.0,
+        "y": 111.0,
+        "width": 72.0,
+        "height": 85.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_950_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_950_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_174",
+      "analysisId": "a_sample_test",
+      "timestamp": 38.0,
+      "frameNumber": 950,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 36.0,
+        "width": 79.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_950_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_950_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_175",
+      "analysisId": "a_sample_test",
+      "timestamp": 38.4,
+      "frameNumber": 960,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 297.0,
+        "y": 116.0,
+        "width": 72.0,
+        "height": 80.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_960_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_960_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_176",
+      "analysisId": "a_sample_test",
+      "timestamp": 38.4,
+      "frameNumber": 960,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 37.0,
+        "width": 83.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_960_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_960_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_177",
+      "analysisId": "a_sample_test",
+      "timestamp": 38.8,
+      "frameNumber": 970,
+      "trackId": "TRK-023",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 291.0,
+        "y": 108.0,
+        "width": 81.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_970_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_970_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_178",
+      "analysisId": "a_sample_test",
+      "timestamp": 38.8,
+      "frameNumber": 970,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 36.0,
+        "width": 85.0,
+        "height": 105.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_970_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_970_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_179",
+      "analysisId": "a_sample_test",
+      "timestamp": 39.2,
+      "frameNumber": 980,
+      "trackId": "TRK-023",
+      "confidence": 0.98,
+      "boundingBox": {
+        "x": 282.0,
+        "y": 86.0,
+        "width": 98.0,
+        "height": 110.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_980_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_980_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_180",
+      "analysisId": "a_sample_test",
+      "timestamp": 39.2,
+      "frameNumber": 980,
+      "trackId": "TRK-048",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 217.0,
+        "y": 136.0,
+        "width": 93.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_980_TRK-048.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_980_TRK-048.jpg"
+    },
+    {
+      "id": "m_a_sample_test_181",
+      "analysisId": "a_sample_test",
+      "timestamp": 39.6,
+      "frameNumber": 990,
+      "trackId": "TRK-023",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 298.0,
+        "y": 96.0,
+        "width": 93.0,
+        "height": 100.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_990_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_990_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_182",
+      "analysisId": "a_sample_test",
+      "timestamp": 39.6,
+      "frameNumber": 990,
+      "trackId": "TRK-048",
+      "confidence": 0.85,
+      "boundingBox": {
+        "x": 227.0,
+        "y": 136.0,
+        "width": 72.0,
+        "height": 73.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_990_TRK-048.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_990_TRK-048.jpg"
+    },
+    {
+      "id": "m_a_sample_test_183",
+      "analysisId": "a_sample_test",
+      "timestamp": 39.6,
+      "frameNumber": 990,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 219.0,
+        "y": 37.0,
+        "width": 82.0,
+        "height": 102.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_990_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_990_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_184",
+      "analysisId": "a_sample_test",
+      "timestamp": 40.0,
+      "frameNumber": 1000,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 303.0,
+        "y": 82.0,
+        "width": 104.0,
+        "height": 114.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1000_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1000_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_185",
+      "analysisId": "a_sample_test",
+      "timestamp": 40.0,
+      "frameNumber": 1000,
+      "trackId": "TRK-048",
+      "confidence": 0.9,
+      "boundingBox": {
+        "x": 226.0,
+        "y": 133.0,
+        "width": 74.0,
+        "height": 75.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1000_TRK-048.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1000_TRK-048.jpg"
+    },
+    {
+      "id": "m_a_sample_test_186",
+      "analysisId": "a_sample_test",
+      "timestamp": 40.0,
+      "frameNumber": 1000,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 36.0,
+        "width": 85.0,
+        "height": 107.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1000_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1000_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_187",
+      "analysisId": "a_sample_test",
+      "timestamp": 40.4,
+      "frameNumber": 1010,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 310.0,
+        "y": 82.0,
+        "width": 104.0,
+        "height": 114.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1010_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1010_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_188",
+      "analysisId": "a_sample_test",
+      "timestamp": 40.4,
+      "frameNumber": 1010,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 220.0,
+        "y": 37.0,
+        "width": 87.0,
+        "height": 109.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1010_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1010_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_189",
+      "analysisId": "a_sample_test",
+      "timestamp": 40.8,
+      "frameNumber": 1020,
+      "trackId": "TRK-023",
+      "confidence": 0.95,
+      "boundingBox": {
+        "x": 317.0,
+        "y": 95.0,
+        "width": 94.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1020_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1020_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_190",
+      "analysisId": "a_sample_test",
+      "timestamp": 41.2,
+      "frameNumber": 1030,
+      "trackId": "TRK-023",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 320.0,
+        "y": 97.0,
+        "width": 93.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1030_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1030_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_191",
+      "analysisId": "a_sample_test",
+      "timestamp": 41.6,
+      "frameNumber": 1040,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 318.0,
+        "y": 88.0,
+        "width": 103.0,
+        "height": 108.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1040_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1040_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_192",
+      "analysisId": "a_sample_test",
+      "timestamp": 41.6,
+      "frameNumber": 1040,
+      "trackId": "TRK-044",
+      "confidence": 0.84,
+      "boundingBox": {
+        "x": 701.0,
+        "y": 159.0,
+        "width": 72.0,
+        "height": 61.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1040_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1040_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_193",
+      "analysisId": "a_sample_test",
+      "timestamp": 42.0,
+      "frameNumber": 1050,
+      "trackId": "TRK-023",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 312.0,
+        "y": 97.0,
+        "width": 99.0,
+        "height": 99.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1050_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1050_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_194",
+      "analysisId": "a_sample_test",
+      "timestamp": 42.0,
+      "frameNumber": 1050,
+      "trackId": "TRK-044",
+      "confidence": 0.7,
+      "boundingBox": {
+        "x": 682.0,
+        "y": 133.0,
+        "width": 95.0,
+        "height": 82.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1050_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1050_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_195",
+      "analysisId": "a_sample_test",
+      "timestamp": 42.4,
+      "frameNumber": 1060,
+      "trackId": "TRK-023",
+      "confidence": 0.81,
+      "boundingBox": {
+        "x": 309.0,
+        "y": 104.0,
+        "width": 96.0,
+        "height": 92.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1060_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1060_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_196",
+      "analysisId": "a_sample_test",
+      "timestamp": 42.4,
+      "frameNumber": 1060,
+      "trackId": "TRK-044",
+      "confidence": 0.79,
+      "boundingBox": {
+        "x": 678.0,
+        "y": 129.0,
+        "width": 98.0,
+        "height": 84.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1060_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1060_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_197",
+      "analysisId": "a_sample_test",
+      "timestamp": 42.8,
+      "frameNumber": 1070,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 309.0,
+        "y": 82.0,
+        "width": 118.0,
+        "height": 114.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1070_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1070_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_198",
+      "analysisId": "a_sample_test",
+      "timestamp": 42.8,
+      "frameNumber": 1070,
+      "trackId": "TRK-044",
+      "confidence": 0.82,
+      "boundingBox": {
+        "x": 677.0,
+        "y": 128.0,
+        "width": 98.0,
+        "height": 85.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1070_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1070_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_199",
+      "analysisId": "a_sample_test",
+      "timestamp": 43.2,
+      "frameNumber": 1080,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 312.0,
+        "y": 79.0,
+        "width": 120.0,
+        "height": 117.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1080_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1080_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_200",
+      "analysisId": "a_sample_test",
+      "timestamp": 43.2,
+      "frameNumber": 1080,
+      "trackId": "TRK-044",
+      "confidence": 0.8,
+      "boundingBox": {
+        "x": 676.0,
+        "y": 128.0,
+        "width": 98.0,
+        "height": 85.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1080_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1080_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_201",
+      "analysisId": "a_sample_test",
+      "timestamp": 43.6,
+      "frameNumber": 1090,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 310.0,
+        "y": 76.0,
+        "width": 120.0,
+        "height": 120.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1090_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1090_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_202",
+      "analysisId": "a_sample_test",
+      "timestamp": 43.6,
+      "frameNumber": 1090,
+      "trackId": "TRK-044",
+      "confidence": 0.89,
+      "boundingBox": {
+        "x": 685.0,
+        "y": 146.0,
+        "width": 96.0,
+        "height": 84.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1090_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1090_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_203",
+      "analysisId": "a_sample_test",
+      "timestamp": 43.6,
+      "frameNumber": 1090,
+      "trackId": "TRK-041",
+      "confidence": 0.82,
+      "boundingBox": {
+        "x": 576.0,
+        "y": 65.0,
+        "width": 94.0,
+        "height": 123.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1090_TRK-041.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1090_TRK-041.jpg"
+    },
+    {
+      "id": "m_a_sample_test_204",
+      "analysisId": "a_sample_test",
+      "timestamp": 43.6,
+      "frameNumber": 1090,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 37.0,
+        "width": 89.0,
+        "height": 112.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1090_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1090_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_205",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.0,
+      "frameNumber": 1100,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 309.0,
+        "y": 75.0,
+        "width": 120.0,
+        "height": 121.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1100_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1100_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_206",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.0,
+      "frameNumber": 1100,
+      "trackId": "TRK-044",
+      "confidence": 0.63,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 142.0,
+        "width": 91.0,
+        "height": 79.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1100_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1100_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_207",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.0,
+      "frameNumber": 1100,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 37.0,
+        "width": 89.0,
+        "height": 113.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1100_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1100_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_208",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.4,
+      "frameNumber": 1110,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 309.0,
+        "y": 76.0,
+        "width": 117.0,
+        "height": 120.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1110_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1110_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_209",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.4,
+      "frameNumber": 1110,
+      "trackId": "TRK-044",
+      "confidence": 0.76,
+      "boundingBox": {
+        "x": 694.0,
+        "y": 145.0,
+        "width": 87.0,
+        "height": 75.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1110_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1110_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_210",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.4,
+      "frameNumber": 1110,
+      "trackId": "TRK-041",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 577.0,
+        "y": 38.0,
+        "width": 111.0,
+        "height": 143.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1110_TRK-041.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1110_TRK-041.jpg"
+    },
+    {
+      "id": "m_a_sample_test_211",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.8,
+      "frameNumber": 1120,
+      "trackId": "TRK-044",
+      "confidence": 0.63,
+      "boundingBox": {
+        "x": 698.0,
+        "y": 152.0,
+        "width": 82.0,
+        "height": 68.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1120_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1120_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_212",
+      "analysisId": "a_sample_test",
+      "timestamp": 44.8,
+      "frameNumber": 1120,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 225.0,
+        "y": 37.0,
+        "width": 78.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1120_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1120_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_213",
+      "analysisId": "a_sample_test",
+      "timestamp": 45.2,
+      "frameNumber": 1130,
+      "trackId": "TRK-044",
+      "confidence": 0.76,
+      "boundingBox": {
+        "x": 690.0,
+        "y": 134.0,
+        "width": 101.0,
+        "height": 85.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1130_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1130_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_214",
+      "analysisId": "a_sample_test",
+      "timestamp": 45.2,
+      "frameNumber": 1130,
+      "trackId": "TRK-023",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 309.0,
+        "y": 93.0,
+        "width": 101.0,
+        "height": 101.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1130_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1130_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_215",
+      "analysisId": "a_sample_test",
+      "timestamp": 45.6,
+      "frameNumber": 1140,
+      "trackId": "TRK-044",
+      "confidence": 0.92,
+      "boundingBox": {
+        "x": 679.0,
+        "y": 120.0,
+        "width": 111.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1140_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1140_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_216",
+      "analysisId": "a_sample_test",
+      "timestamp": 45.6,
+      "frameNumber": 1140,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 301.0,
+        "y": 85.0,
+        "width": 109.0,
+        "height": 108.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1140_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1140_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_217",
+      "analysisId": "a_sample_test",
+      "timestamp": 46.0,
+      "frameNumber": 1150,
+      "trackId": "TRK-044",
+      "confidence": 0.94,
+      "boundingBox": {
+        "x": 680.0,
+        "y": 120.0,
+        "width": 109.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1150_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1150_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_218",
+      "analysisId": "a_sample_test",
+      "timestamp": 46.0,
+      "frameNumber": 1150,
+      "trackId": "TRK-023",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 304.0,
+        "y": 95.0,
+        "width": 101.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1150_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1150_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_219",
+      "analysisId": "a_sample_test",
+      "timestamp": 46.0,
+      "frameNumber": 1150,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 37.0,
+        "width": 76.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1150_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1150_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_220",
+      "analysisId": "a_sample_test",
+      "timestamp": 46.4,
+      "frameNumber": 1160,
+      "trackId": "TRK-044",
+      "confidence": 0.93,
+      "boundingBox": {
+        "x": 681.0,
+        "y": 121.0,
+        "width": 106.0,
+        "height": 93.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1160_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1160_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_221",
+      "analysisId": "a_sample_test",
+      "timestamp": 46.4,
+      "frameNumber": 1160,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 297.0,
+        "y": 79.0,
+        "width": 117.0,
+        "height": 115.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1160_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1160_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_222",
+      "analysisId": "a_sample_test",
+      "timestamp": 46.8,
+      "frameNumber": 1170,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 305.0,
+        "y": 83.0,
+        "width": 114.0,
+        "height": 112.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1170_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1170_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_223",
+      "analysisId": "a_sample_test",
+      "timestamp": 47.2,
+      "frameNumber": 1180,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 310.0,
+        "y": 82.0,
+        "width": 113.0,
+        "height": 113.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1180_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1180_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_224",
+      "analysisId": "a_sample_test",
+      "timestamp": 47.2,
+      "frameNumber": 1180,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 221.0,
+        "y": 38.0,
+        "width": 88.0,
+        "height": 111.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1180_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1180_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_225",
+      "analysisId": "a_sample_test",
+      "timestamp": 47.2,
+      "frameNumber": 1180,
+      "trackId": "TRK-044",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 696.0,
+        "y": 159.0,
+        "width": 88.0,
+        "height": 76.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1180_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1180_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_226",
+      "analysisId": "a_sample_test",
+      "timestamp": 47.6,
+      "frameNumber": 1190,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 310.0,
+        "y": 78.0,
+        "width": 115.0,
+        "height": 118.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1190_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1190_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_227",
+      "analysisId": "a_sample_test",
+      "timestamp": 47.6,
+      "frameNumber": 1190,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 228.0,
+        "y": 43.0,
+        "width": 103.0,
+        "height": 136.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1190_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1190_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_228",
+      "analysisId": "a_sample_test",
+      "timestamp": 47.6,
+      "frameNumber": 1190,
+      "trackId": "TRK-044",
+      "confidence": 0.82,
+      "boundingBox": {
+        "x": 687.0,
+        "y": 125.0,
+        "width": 111.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1190_TRK-044.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1190_TRK-044.jpg"
+    },
+    {
+      "id": "m_a_sample_test_229",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.0,
+      "frameNumber": 1200,
+      "trackId": "TRK-023",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 309.0,
+        "y": 81.0,
+        "width": 109.0,
+        "height": 112.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1200_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1200_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_230",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.0,
+      "frameNumber": 1200,
+      "trackId": "TRK-062",
+      "confidence": 0.79,
+      "boundingBox": {
+        "x": 504.0,
+        "y": 2.0,
+        "width": 77.0,
+        "height": 163.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1200_TRK-062.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1200_TRK-062.jpg"
+    },
+    {
+      "id": "m_a_sample_test_231",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.0,
+      "frameNumber": 1200,
+      "trackId": "TRK-041",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 627.0,
+        "y": 48.0,
+        "width": 95.0,
+        "height": 119.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1200_TRK-041.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1200_TRK-041.jpg"
+    },
+    {
+      "id": "m_a_sample_test_232",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.4,
+      "frameNumber": 1210,
+      "trackId": "TRK-023",
+      "confidence": 0.76,
+      "boundingBox": {
+        "x": 303.0,
+        "y": 98.0,
+        "width": 91.0,
+        "height": 96.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1210_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1210_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_233",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.4,
+      "frameNumber": 1210,
+      "trackId": "TRK-062",
+      "confidence": 0.72,
+      "boundingBox": {
+        "x": 485.0,
+        "y": 8.0,
+        "width": 81.0,
+        "height": 174.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1210_TRK-062.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1210_TRK-062.jpg"
+    },
+    {
+      "id": "m_a_sample_test_234",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.4,
+      "frameNumber": 1210,
+      "trackId": "TRK-018",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 261.0,
+        "y": 38.0,
+        "width": 83.0,
+        "height": 107.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1210_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1210_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_235",
+      "analysisId": "a_sample_test",
+      "timestamp": 48.8,
+      "frameNumber": 1220,
+      "trackId": "TRK-023",
+      "confidence": 0.58,
+      "boundingBox": {
+        "x": 294.0,
+        "y": 97.0,
+        "width": 91.0,
+        "height": 98.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1220_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1220_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_236",
+      "analysisId": "a_sample_test",
+      "timestamp": 49.2,
+      "frameNumber": 1230,
+      "trackId": "TRK-023",
+      "confidence": 0.7,
+      "boundingBox": {
+        "x": 295.0,
+        "y": 99.0,
+        "width": 87.0,
+        "height": 95.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1230_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1230_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_237",
+      "analysisId": "a_sample_test",
+      "timestamp": 49.2,
+      "frameNumber": 1230,
+      "trackId": "TRK-018",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 253.0,
+        "y": 60.0,
+        "width": 72.0,
+        "height": 89.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1230_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1230_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_238",
+      "analysisId": "a_sample_test",
+      "timestamp": 49.6,
+      "frameNumber": 1240,
+      "trackId": "TRK-023",
+      "confidence": 0.82,
+      "boundingBox": {
+        "x": 291.0,
+        "y": 91.0,
+        "width": 91.0,
+        "height": 103.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1240_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1240_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_239",
+      "analysisId": "a_sample_test",
+      "timestamp": 50.0,
+      "frameNumber": 1250,
+      "trackId": "TRK-023",
+      "confidence": 0.84,
+      "boundingBox": {
+        "x": 299.0,
+        "y": 89.0,
+        "width": 90.0,
+        "height": 104.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1250_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1250_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_240",
+      "analysisId": "a_sample_test",
+      "timestamp": 50.4,
+      "frameNumber": 1260,
+      "trackId": "TRK-023",
+      "confidence": 0.96,
+      "boundingBox": {
+        "x": 305.0,
+        "y": 91.0,
+        "width": 88.0,
+        "height": 103.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1260_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1260_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_241",
+      "analysisId": "a_sample_test",
+      "timestamp": 50.8,
+      "frameNumber": 1270,
+      "trackId": "TRK-023",
+      "confidence": 0.85,
+      "boundingBox": {
+        "x": 274.0,
+        "y": 65.0,
+        "width": 110.0,
+        "height": 130.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1270_TRK-023.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1270_TRK-023.jpg"
+    },
+    {
+      "id": "m_a_sample_test_242",
+      "analysisId": "a_sample_test",
+      "timestamp": 50.8,
+      "frameNumber": 1270,
+      "trackId": "TRK-067",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 619.0,
+        "y": 432.0,
+        "width": 178.0,
+        "height": 134.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1270_TRK-067.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1270_TRK-067.jpg"
+    },
+    {
+      "id": "m_a_sample_test_243",
+      "analysisId": "a_sample_test",
+      "timestamp": 51.2,
+      "frameNumber": 1280,
+      "trackId": "TRK-067",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 592.0,
+        "y": 436.0,
+        "width": 193.0,
+        "height": 145.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1280_TRK-067.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1280_TRK-067.jpg"
+    },
+    {
+      "id": "m_a_sample_test_244",
+      "analysisId": "a_sample_test",
+      "timestamp": 51.2,
+      "frameNumber": 1280,
+      "trackId": "TRK-018",
+      "confidence": 0.91,
+      "boundingBox": {
+        "x": 251.0,
+        "y": 55.0,
+        "width": 95.0,
+        "height": 121.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1280_TRK-018.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1280_TRK-018.jpg"
+    },
+    {
+      "id": "m_a_sample_test_245",
+      "analysisId": "a_sample_test",
+      "timestamp": 51.6,
+      "frameNumber": 1290,
+      "trackId": "TRK-067",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 582.0,
+        "y": 435.0,
+        "width": 201.0,
+        "height": 151.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1290_TRK-067.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1290_TRK-067.jpg"
+    },
+    {
+      "id": "m_a_sample_test_246",
+      "analysisId": "a_sample_test",
+      "timestamp": 52.8,
+      "frameNumber": 1320,
+      "trackId": "TRK-067",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 599.0,
+        "y": 441.0,
+        "width": 167.0,
+        "height": 123.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1320_TRK-067.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1320_TRK-067.jpg"
+    },
+    {
+      "id": "m_a_sample_test_247",
+      "analysisId": "a_sample_test",
+      "timestamp": 53.2,
+      "frameNumber": 1330,
+      "trackId": "TRK-067",
+      "confidence": 1.0,
+      "boundingBox": {
+        "x": 608.0,
+        "y": 441.0,
+        "width": 153.0,
+        "height": 109.0
+      },
+      "reviewState": "unreviewed",
+      "rejectionReason": null,
+      "frameImageUrl": "/static/evidence/a_sample_test/frame_1330_TRK-067.jpg",
+      "tagCropUrl": "/static/evidence/a_sample_test/tag_1330_TRK-067.jpg"
+    }
+  ]
+}

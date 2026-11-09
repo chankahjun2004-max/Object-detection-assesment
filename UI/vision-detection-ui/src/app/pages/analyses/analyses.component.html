@@ -1,0 +1,133 @@
+<div class="page-content">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="header-left">
+      <h1>Video Analyses</h1>
+      <span class="count-badge" *ngIf="!loading">{{ filteredAnalyses.length }} total</span>
+    </div>
+    <a routerLink="/analyses/new" class="btn btn-primary">
+      <span>+</span> New Analysis
+    </a>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="filter-group">
+      <label for="statusFilter">Status</label>
+      <select id="statusFilter" [(ngModel)]="statusFilter" (ngModelChange)="applyFilters()">
+        <option value="all">All Statuses</option>
+        <option value="queued">Queued</option>
+        <option value="processing">Processing</option>
+        <option value="complete">Complete</option>
+        <option value="failed">Failed</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="dateFrom">From Date</label>
+      <input type="date" id="dateFrom" [(ngModel)]="dateFrom" (ngModelChange)="applyFilters()" />
+    </div>
+
+    <div class="filter-group">
+      <label for="dateTo">To Date</label>
+      <input type="date" id="dateTo" [(ngModel)]="dateTo" (ngModelChange)="applyFilters()" />
+    </div>
+
+    <div class="filter-group">
+      <label for="reviewFilter">Review</label>
+      <select id="reviewFilter" [(ngModel)]="reviewFilter" (ngModelChange)="applyFilters()">
+        <option value="all">All</option>
+        <option value="unreviewed">Unreviewed</option>
+        <option value="reviewed">Reviewed/In Progress</option>
+      </select>
+    </div>
+
+    <button class="btn btn-ghost btn-sm filter-reset" (click)="statusFilter='all'; dateFrom=''; dateTo=''; reviewFilter='all'; applyFilters()">
+      Reset Filters
+    </button>
+  </div>
+
+  <!-- Loading State -->
+  <div class="loading-state" *ngIf="loading">
+    <div class="spinner"></div>
+    <span>Loading analyses...</span>
+  </div>
+
+  <!-- Table -->
+  <div class="table-container" *ngIf="!loading">
+    <!-- Empty State -->
+    <div class="empty-state" *ngIf="filteredAnalyses.length === 0">
+      <div class="empty-icon">🎬</div>
+      <h3>No analyses found</h3>
+      <p>Try adjusting your filters or create a new analysis to get started.</p>
+    </div>
+
+    <table *ngIf="filteredAnalyses.length > 0">
+      <thead>
+        <tr>
+          <th>Clip Name</th>
+          <th>Upload Date</th>
+          <th>Status</th>
+          <th>Duration</th>
+          <th>Matches</th>
+          <th>Review Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let analysis of paginatedAnalyses">
+          <td>
+            <div class="clip-name">
+              <span class="clip-icon">▶</span>
+              <span>{{ analysis.clipName }}</span>
+            </div>
+          </td>
+          <td class="text-muted">{{ analysis.uploadDate | date:'MMM d, y, h:mm a' }}</td>
+          <td>
+            <span [class]="getStatusClass(analysis.status)">
+              <span class="badge-dot"></span>
+              {{ getStatusLabel(analysis.status) }}
+            </span>
+          </td>
+          <td class="text-mono">{{ analysis.duration }}</td>
+          <td>
+            <span class="match-count" [class.has-matches]="analysis.matchCount > 0">
+              {{ analysis.matchCount }}
+            </span>
+          </td>
+          <td>
+            <span [class]="getReviewClass(analysis.reviewStatus)">
+              <span class="badge-dot"></span>
+              {{ getReviewLabel(analysis.reviewStatus) }}
+            </span>
+          </td>
+          <td>
+            <a [routerLink]="['/analyses', analysis.id]"
+               class="btn btn-secondary btn-sm"
+               [class.btn-disabled]="analysis.status === 'queued' || analysis.status === 'processing' || analysis.status === 'failed'">
+              View Results
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination" *ngIf="filteredAnalyses.length > 0">
+      <span class="pagination-info">
+        Showing {{ startItem }}–{{ endItem }} of {{ filteredAnalyses.length }} analyses
+      </span>
+      <div class="pagination-controls">
+        <button class="page-btn" [disabled]="currentPage === 1" (click)="goToPage(currentPage - 1)">‹</button>
+        <button class="page-btn"
+                *ngFor="let page of pageNumbers"
+                [class.active]="page === currentPage"
+                (click)="goToPage(page)">
+          {{ page }}
+        </button>
+        <button class="page-btn" [disabled]="currentPage === totalPages" (click)="goToPage(currentPage + 1)">›</button>
+      </div>
+    </div>
+  </div>
+</div>
+

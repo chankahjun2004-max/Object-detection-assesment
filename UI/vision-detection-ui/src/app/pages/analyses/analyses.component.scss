@@ -1,0 +1,138 @@
+.page-content {
+  padding: 28px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+.count-badge {
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+  }
+
+  select, input {
+    min-width: 140px;
+    height: 34px;
+    font-size: 12px;
+  }
+}
+
+.filter-reset {
+  margin-left: auto;
+  height: 34px;
+  align-self: flex-end;
+}
+
+/* Loading */
+.loading-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--bright-blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Table Overrides */
+.clip-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+
+  .clip-icon {
+    font-size: 10px;
+    color: var(--bright-blue);
+    opacity: 0.7;
+  }
+}
+
+.text-muted {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.text-mono {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.match-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+
+  &.has-matches {
+    color: var(--blue-light);
+  }
+}
+
+.btn-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+

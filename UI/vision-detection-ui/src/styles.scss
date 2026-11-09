@@ -1,0 +1,510 @@
+/* ============================================================
+   Global CSS Variables – Dark Navy/Blue Design System
+   ============================================================ */
+:root {
+  --bg-primary:    #0a0f1e;
+  --bg-secondary:  #0d1b2a;
+  --bg-panel:      #111827;
+  --bg-card:       #152030;
+  --bg-hover:      #1a2d40;
+  --accent-blue:   #1e4d8c;
+  --bright-blue:   #2563eb;
+  --blue-light:    #3b82f6;
+  --blue-glow:     rgba(37, 99, 235, 0.3);
+
+  --text-primary:   #f0f4ff;
+  --text-secondary: #94a3b8;
+  --text-muted:     #4b5563;
+  --text-link:      #60a5fa;
+
+  --border-color:   #1e3a52;
+  --border-subtle:  #0f2235;
+
+  /* Status Colors */
+  --status-queued:      #64748b;
+  --status-processing:  #f59e0b;
+  --status-complete:    #10b981;
+  --status-failed:      #ef4444;
+
+  /* Review Colors */
+  --review-unreviewed:  #f97316;
+  --review-inprogress:  #3b82f6;
+  --review-reviewed:    #10b981;
+
+  /* Match Review States */
+  --match-confirmed:    #10b981;
+  --match-rejected:     #ef4444;
+  --match-unreviewed:   #94a3b8;
+
+  --font-sans: 'Inter', 'system-ui', -apple-system, sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.5);
+  --transition: 0.18s ease;
+}
+
+/* ============================================================
+   Reset & Base
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--accent-blue); border-radius: 3px; }
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), opacity var(--transition), transform var(--transition);
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+  &:not(:disabled):hover { transform: translateY(-1px); }
+  &:not(:disabled):active { transform: translateY(0); }
+}
+
+.btn-primary {
+  background: var(--bright-blue);
+  color: #fff;
+  &:not(:disabled):hover { background: var(--blue-light); }
+}
+
+.btn-secondary {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  &:not(:disabled):hover { background: var(--accent-blue); }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  &:not(:disabled):hover { color: var(--text-primary); border-color: var(--blue-light); }
+}
+
+.btn-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--status-failed);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  &:not(:disabled):hover { background: rgba(239, 68, 68, 0.25); }
+}
+
+.btn-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--status-complete);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  &:not(:disabled):hover { background: rgba(16, 185, 129, 0.25); }
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-icon {
+  padding: 7px;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+
+/* ============================================================
+   Badges
+   ============================================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  .badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+}
+
+.badge-queued {
+  background: rgba(100, 116, 139, 0.2);
+  color: var(--status-queued);
+  .badge-dot { background: var(--status-queued); }
+}
+
+.badge-processing {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--status-processing);
+  .badge-dot {
+    background: var(--status-processing);
+    animation: pulse-dot 1.2s ease-in-out infinite;
+  }
+}
+
+.badge-complete {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--status-complete);
+  .badge-dot { background: var(--status-complete); }
+}
+
+.badge-failed {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--status-failed);
+  .badge-dot { background: var(--status-failed); }
+}
+
+.badge-unreviewed {
+  background: rgba(249, 115, 22, 0.15);
+  color: var(--review-unreviewed);
+  .badge-dot { background: var(--review-unreviewed); }
+}
+
+.badge-in-progress {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--review-inprogress);
+  .badge-dot { background: var(--review-inprogress); }
+}
+
+.badge-reviewed {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--review-reviewed);
+  .badge-dot { background: var(--review-reviewed); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* ============================================================
+   Cards
+   ============================================================ */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   Table
+   ============================================================ */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 13px 16px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 13px;
+  }
+
+  tbody tr {
+    transition: background var(--transition);
+    &:hover { background: var(--bg-hover); }
+    &:last-child td { border-bottom: none; }
+  }
+}
+
+/* ============================================================
+   Forms
+   ============================================================ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+select, input[type="text"], input[type="date"] {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  outline: none;
+  transition: border-color var(--transition);
+  appearance: none;
+
+  &:focus { border-color: var(--bright-blue); box-shadow: 0 0 0 2px var(--blue-glow); }
+  option { background: var(--bg-secondary); }
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--bright-blue);
+    cursor: pointer;
+    transition: transform var(--transition);
+    &:hover { transform: scale(1.2); }
+  }
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--bright-blue);
+  cursor: pointer;
+}
+
+/* ============================================================
+   Progress Bar
+   ============================================================ */
+.progress-bar {
+  height: 6px;
+  background: var(--bg-hover);
+  border-radius: 3px;
+  overflow: hidden;
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--bright-blue), var(--blue-light));
+    border-radius: 3px;
+    transition: width 0.4s ease;
+  }
+}
+
+/* ============================================================
+   Page Layout
+   ============================================================ */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 28px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+  padding: 0;
+  margin-bottom: 20px;
+  transition: color var(--transition);
+
+  &:hover { color: var(--text-primary); }
+  .arrow { font-size: 16px; }
+}
+
+/* ============================================================
+   Empty State
+   ============================================================ */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 32px;
+  color: var(--text-secondary);
+  text-align: center;
+
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    opacity: 0.4;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 13px;
+    color: var(--text-muted);
+    max-width: 320px;
+  }
+}
+
+/* ============================================================
+   Pagination
+   ============================================================ */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-subtle);
+
+  .pagination-info {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .pagination-controls {
+    display: flex;
+    gap: 4px;
+  }
+
+  .page-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all var(--transition);
+
+    &:hover, &.active {
+      background: var(--bright-blue);
+      color: #fff;
+      border-color: var(--bright-blue);
+    }
+
+    &:disabled { opacity: 0.3; cursor: not-allowed; }
+  }
+}
+
+/* ============================================================
+   Tooltip-like helper text
+   ============================================================ */
+.helper-text {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ============================================================
+   Divider
+   ============================================================ */
+.divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 16px 0;
+}

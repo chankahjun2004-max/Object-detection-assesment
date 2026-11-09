@@ -1,0 +1,231 @@
+<div class="page-content">
+  <!-- Back Button -->
+  <button class="back-btn" (click)="goBack()">
+    <span class="arrow">←</span> Back to Analyses
+  </button>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>New Analysis</h1>
+  </div>
+
+  <!-- Three Panel Layout -->
+  <div class="panels-grid">
+
+    <!-- Panel 1: Upload -->
+    <div class="card panel">
+      <div class="card-header">
+        <span class="card-title">
+          <span class="panel-num">01</span>
+          Video Upload
+        </span>
+        <span class="required-badge">Required</span>
+      </div>
+
+      <!-- Upload Zone -->
+      <div class="upload-zone"
+           [class.dragging]="isDragging"
+           [class.uploaded]="uploadedFile && !isUploading"
+           [class.uploading]="isUploading"
+           (dragover)="onDragOver($event)"
+           (dragleave)="onDragLeave($event)"
+           (drop)="onDrop($event)"
+           *ngIf="!uploadedFile">
+        <div class="upload-icon">📹</div>
+        <p class="upload-title">Drag & drop your video here</p>
+        <p class="upload-sub">or click to browse files</p>
+        <label class="btn btn-secondary upload-btn">
+          Browse Files
+          <input type="file" accept="video/mp4,video/*" (change)="onFileSelect($event)" hidden />
+        </label>
+        <p class="upload-formats">Supported: MP4 · Max 500MB</p>
+      </div>
+
+      <!-- Upload Error -->
+      <div class="upload-error" *ngIf="uploadError">
+        <span>⚠️</span> {{ uploadError }}
+      </div>
+
+      <!-- File Info + Progress -->
+      <div class="file-info" *ngIf="uploadedFile">
+        <div class="file-header">
+          <div class="file-meta">
+            <span class="file-icon">🎬</span>
+            <div>
+              <p class="file-name">{{ uploadedFile.name }}</p>
+              <p class="file-size">{{ formatFileSize(uploadedFile.size) }}</p>
+            </div>
+          </div>
+          <button class="btn btn-ghost btn-sm" (click)="removeFile()" [disabled]="isUploading">✕</button>
+        </div>
+
+        <div class="progress-bar" style="margin-top: 12px;">
+          <div class="progress-fill" [style.width.%]="uploadProgress"></div>
+        </div>
+        <div class="progress-label">
+          <span *ngIf="isUploading">Uploading... {{ uploadProgress | number:'1.0-0' }}%</span>
+          <span *ngIf="!isUploading" class="upload-complete">✓ Upload complete</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 2: Target Reference (Preset / System-configured) -->
+    <div class="card panel">
+      <div class="card-header">
+        <span class="card-title">
+          <span class="panel-num">02</span>
+          Target Reference
+        </span>
+        <span class="system-badge">⚙ System Preset</span>
+      </div>
+
+      <!-- Preset tag display -->
+      <div class="preset-reference">
+        <div class="preset-tag-display">
+          <div class="preset-tag-visual">
+            <div class="tag-lanyard"></div>
+            <div class="tag-card">
+              <div class="tag-logo">🏢</div>
+              <div class="tag-lines">
+                <div class="tag-line long"></div>
+                <div class="tag-line short"></div>
+                <div class="tag-line medium"></div>
+              </div>
+              <div class="tag-barcode">
+                <div *ngFor="let b of [1,2,3,4,5,6,7,8]" class="bar" [style.height.px]="b % 2 === 0 ? 14 : 10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="preset-info">
+          <div class="preset-info-row">
+            <span class="preset-label">Reference Type</span>
+            <span class="preset-value">Staff Name Tag</span>
+          </div>
+          <div class="preset-info-row">
+            <span class="preset-label">Configured By</span>
+            <span class="preset-value">System Administrator</span>
+          </div>
+          <div class="preset-info-row">
+            <span class="preset-label">Version</span>
+            <span class="preset-value mono">v2.3.1</span>
+          </div>
+          <div class="preset-info-row">
+            <span class="preset-label">Status</span>
+            <span class="preset-status-ok">✓ Active</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="preset-notice">
+        🔒 The staff name tag reference is pre-configured by the system.
+        Contact your administrator to update the reference template.
+      </div>
+    </div>
+
+    <!-- Panel 3: Settings -->
+    <div class="card panel">
+      <div class="card-header">
+        <span class="card-title">
+          <span class="panel-num">03</span>
+          Analysis Settings
+        </span>
+      </div>
+
+      <div class="settings-list">
+
+        <!-- Frame Sampling -->
+        <div class="setting-item">
+          <div class="setting-label-row">
+            <label>Frame Sampling Interval</label>
+            <span class="setting-value">{{ frameSampling }} fps</span>
+          </div>
+          <input type="range" min="1" max="30" [(ngModel)]="frameSampling" />
+          <div class="range-hints"><span>1 fps (slow)</span><span>30 fps (full)</span></div>
+        </div>
+
+        <!-- Detection Threshold -->
+        <div class="setting-item">
+          <div class="setting-label-row">
+            <label>Detection Threshold</label>
+            <span class="setting-value">{{ detectionThreshold }}%</span>
+          </div>
+          <input type="range" min="0" max="100" [(ngModel)]="detectionThreshold" />
+          <div class="range-hints"><span>0% (all)</span><span>100% (strict)</span></div>
+        </div>
+
+        <!-- Matching Threshold -->
+        <div class="setting-item">
+          <div class="setting-label-row">
+            <label>Matching Threshold</label>
+            <span class="setting-value">{{ matchingThreshold }}%</span>
+          </div>
+          <input type="range" min="0" max="100" [(ngModel)]="matchingThreshold" />
+          <div class="range-hints"><span>0% (loose)</span><span>100% (exact)</span></div>
+        </div>
+
+        <!-- Enable Tracking -->
+        <div class="setting-item checkbox-item">
+          <label class="checkbox-label">
+            <input type="checkbox" [(ngModel)]="enableTracking" />
+            <span class="checkbox-text">Enable Object Tracking</span>
+          </label>
+          <p class="helper-text">Track detected tags across consecutive frames for consistent IDs.</p>
+        </div>
+
+        <!-- Advanced Options Accordion -->
+        <div class="accordion">
+          <button class="accordion-toggle" (click)="showAdvanced = !showAdvanced">
+            <span>Advanced Options</span>
+            <span class="accordion-icon" [class.open]="showAdvanced">▶</span>
+          </button>
+
+          <div class="accordion-body" *ngIf="showAdvanced">
+            <div class="setting-item">
+              <div class="setting-label-row">
+                <label>Min Tag Size (px)</label>
+                <span class="setting-value">{{ minTagSize }}px</span>
+              </div>
+              <input type="range" min="5" max="100" [(ngModel)]="minTagSize" />
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-label-row">
+                <label>Max Tag Size (px)</label>
+                <span class="setting-value">{{ maxTagSize }}px</span>
+              </div>
+              <input type="range" min="50" max="500" [(ngModel)]="maxTagSize" />
+            </div>
+
+            <div class="setting-item">
+              <div class="setting-label-row">
+                <label>NMS Threshold</label>
+                <span class="setting-value">{{ nmsThreshold | number:'1.1-2' }}</span>
+              </div>
+              <input type="range" min="0" max="1" step="0.05" [(ngModel)]="nmsThreshold" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Analysis Button -->
+  <div class="action-bar">
+    <div class="action-hint" *ngIf="!canStart && !uploadedFile">
+      ↑ Upload a video file to enable analysis
+    </div>
+    <div class="action-hint" *ngIf="isUploading">
+      ⏳ Waiting for upload to complete...
+    </div>
+    <button class="btn btn-primary btn-start"
+            [disabled]="!canStart"
+            (click)="startAnalysis()">
+      <span *ngIf="!isSubmitting">▶ Start Analysis</span>
+      <span *ngIf="isSubmitting">⏳ Starting...</span>
+    </button>
+  </div>
+</div>
+
